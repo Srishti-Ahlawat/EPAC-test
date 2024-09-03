@@ -1,0 +1,7 @@
+{
+    "nodeName": "/Security/",
+    "definitionEntry": {
+      "policyId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62"
+    },
+    "scope": {"subscriptions": "/subscriptions/05a4028e-14a9-4f7d-baf3-2629d5a430bc"}
+}

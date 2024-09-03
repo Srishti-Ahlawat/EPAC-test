@@ -1,0 +1,80 @@
+{
+  "createdOn": "2024-09-03 07:28:16Z",
+  "policyDefinitions": {
+    "new": {
+      "/subscriptions/05a4028e-14a9-4f7d-baf3-2629d5a430bc/providers/Microsoft.Authorization/policyDefinitions/1.0.1": {
+        "policyRule": {
+          "if": {
+            "not": {
+              "field": "[concat('tags[', parameters('tagName'), ']')]",
+              "equals": "[parameters('tagValue')]"
+            }
+          },
+          "then": {
+            "effect": "deny"
+          }
+        },
+        "id": "/subscriptions/05a4028e-14a9-4f7d-baf3-2629d5a430bc/providers/Microsoft.Authorization/policyDefinitions/1.0.1",
+        "displayName": "Require a tag and its value on resources",
+        "description": "Enforces a required tag and its value. Does not apply to resource groups.",
+        "metadata": {
+          "version": "1.0.1",
+          "category": "Tags",
+          "pacOwnerId": "d603eee3-d46d-4510-a300-95d23b83732d",
+          "deployedBy": "epac/d603eee3-d46d-4510-a300-95d23b83732d/epac-dev"
+        },
+        "scopeId": "/subscriptions/05a4028e-14a9-4f7d-baf3-2629d5a430bc",
+        "parameters": {
+          "tagName": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Name",
+              "description": "Name of the tag, such as 'environment'"
+            }
+          },
+          "tagValue": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Tag Value",
+              "description": "Value of the tag, such as 'production'"
+            }
+          }
+        },
+        "mode": "Indexed",
+        "name": "1.0.1"
+      }
+    },
+    "numberUnchanged": 0,
+    "delete": {},
+    "numberOfChanges": 1,
+    "update": {},
+    "replace": {}
+  },
+  "policySetDefinitions": {
+    "new": {},
+    "numberUnchanged": 0,
+    "delete": {},
+    "numberOfChanges": 0,
+    "update": {},
+    "replace": {}
+  },
+  "assignments": {
+    "new": {},
+    "numberUnchanged": 0,
+    "delete": {},
+    "numberOfChanges": 0,
+    "update": {},
+    "replace": {}
+  },
+  "pacOwnerId": "d603eee3-d46d-4510-a300-95d23b83732d",
+  "exemptions": {
+    "update": {},
+    "numberOfOrphans": 0,
+    "new": {},
+    "numberUnchanged": 0,
+    "numberOfChanges": 0,
+    "replace": {},
+    "delete": {},
+    "numberOfExpired": 0
+  }
+}
