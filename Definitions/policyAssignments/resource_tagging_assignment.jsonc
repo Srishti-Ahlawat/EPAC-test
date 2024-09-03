@@ -1,7 +1,20 @@
 {
     "nodeName": "/Security/",
+    "assignment": {
+    "name": "ResourceTagging",
+    "displayName": "Tagging",
+    "description": "This policy enforces tags on all resources within the subscription.."
+},
     "definitionEntry": {
       "policyId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62"
     },
-    "scope": {"subscriptions": "/subscriptions/05a4028e-14a9-4f7d-baf3-2629d5a430bc"}
+    "scope": {
+                        "epac-dev": [
+                            "/providers/Microsoft.Management/managementGroups/mg-Epac-Dev"
+                        ]
+            },
+    "parameters": {
+        "tagName": "environment",
+        "tagValue": "production" 
+    }
 }

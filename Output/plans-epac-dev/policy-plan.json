@@ -1,52 +1,10 @@
 {
-  "createdOn": "2024-09-03 07:28:16Z",
+  "createdOn": "2024-09-03 11:06:46Z",
   "policyDefinitions": {
-    "new": {
-      "/subscriptions/05a4028e-14a9-4f7d-baf3-2629d5a430bc/providers/Microsoft.Authorization/policyDefinitions/1.0.1": {
-        "policyRule": {
-          "if": {
-            "not": {
-              "field": "[concat('tags[', parameters('tagName'), ']')]",
-              "equals": "[parameters('tagValue')]"
-            }
-          },
-          "then": {
-            "effect": "deny"
-          }
-        },
-        "id": "/subscriptions/05a4028e-14a9-4f7d-baf3-2629d5a430bc/providers/Microsoft.Authorization/policyDefinitions/1.0.1",
-        "displayName": "Require a tag and its value on resources",
-        "description": "Enforces a required tag and its value. Does not apply to resource groups.",
-        "metadata": {
-          "version": "1.0.1",
-          "category": "Tags",
-          "pacOwnerId": "d603eee3-d46d-4510-a300-95d23b83732d",
-          "deployedBy": "epac/d603eee3-d46d-4510-a300-95d23b83732d/epac-dev"
-        },
-        "scopeId": "/subscriptions/05a4028e-14a9-4f7d-baf3-2629d5a430bc",
-        "parameters": {
-          "tagName": {
-            "type": "String",
-            "metadata": {
-              "displayName": "Tag Name",
-              "description": "Name of the tag, such as 'environment'"
-            }
-          },
-          "tagValue": {
-            "type": "String",
-            "metadata": {
-              "displayName": "Tag Value",
-              "description": "Value of the tag, such as 'production'"
-            }
-          }
-        },
-        "mode": "Indexed",
-        "name": "1.0.1"
-      }
-    },
-    "numberUnchanged": 0,
+    "new": {},
+    "numberUnchanged": 1,
     "delete": {},
-    "numberOfChanges": 1,
+    "numberOfChanges": 0,
     "update": {},
     "replace": {}
   },
@@ -59,10 +17,33 @@
     "replace": {}
   },
   "assignments": {
-    "new": {},
+    "new": {
+      "/providers/Microsoft.Management/managementGroups/mg-Epac-Dev/providers/Microsoft.Authorization/policyAssignments/ResourceTagging": {
+        "parameters": {
+          "tagName": "environment",
+          "tagValue": "production"
+        },
+        "metadata": {
+          "assignedBy": "epac/d603eee3-d46d-4510-a300-95d23b83732d/epac-dev",
+          "pacOwnerId": "d603eee3-d46d-4510-a300-95d23b83732d"
+        },
+        "enforcementMode": "Default",
+        "description": "This policy enforces tags on all resources within the subscription..",
+        "identityRequired": false,
+        "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+        "displayName": "Tagging",
+        "name": "ResourceTagging",
+        "identity": {
+          "type": "None"
+        },
+        "id": "/providers/Microsoft.Management/managementGroups/mg-Epac-Dev/providers/Microsoft.Authorization/policyAssignments/ResourceTagging",
+        "scope": "/providers/Microsoft.Management/managementGroups/mg-Epac-Dev",
+        "notScopes": []
+      }
+    },
     "numberUnchanged": 0,
     "delete": {},
-    "numberOfChanges": 0,
+    "numberOfChanges": 1,
     "update": {},
     "replace": {}
   },
