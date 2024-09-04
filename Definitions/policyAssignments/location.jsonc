@@ -7,7 +7,7 @@
         "description": "Sets the allowed locations"
     },
     "definitionEntry": {
-        "policySetName": "e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c677",
+        "policySetName": "/providers/Microsoft.Authorization/policyDefinitions/e14e5d7c-9551-4ae2-b8fa-b5d6b9b3c677",
         "displayName": "Allowed Locations Initiative"
     },
     "parameters": {
