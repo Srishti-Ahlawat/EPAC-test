@@ -75,6 +75,12 @@ jobs:
           }
         shell: pwsh
 
+      - name: List Output Directory
+        run: |
+          echo "Listing contents of ${PAC_OUTPUT_FOLDER}"
+          ls -la ${PAC_OUTPUT_FOLDER}
+  
+
       - name: Upload Deployment Plan as Artifact
         if: steps.detectPlan.outputs.deployPolicyChanges == 'yes' || steps.detectPlan.outputs.deployRoleChanges == 'yes'
         uses: actions/upload-artifact@v4
@@ -82,3 +88,6 @@ jobs:
           name: "plans-${{ inputs.pacEnvironmentSelector }}"
           path: ${{ env.PAC_OUTPUT_FOLDER }}
           if-no-files-found: error
+
+      
+        
