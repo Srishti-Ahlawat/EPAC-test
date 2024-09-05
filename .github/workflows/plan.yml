@@ -80,7 +80,6 @@ jobs:
           echo "Listing contents of ${PAC_OUTPUT_FOLDER}"
           ls -la ${PAC_OUTPUT_FOLDER}
   
-
       - name: Upload Deployment Plan as Artifact
         if: steps.detectPlan.outputs.deployPolicyChanges == 'yes' || steps.detectPlan.outputs.deployRoleChanges == 'yes'
         uses: actions/upload-artifact@v4
