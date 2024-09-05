@@ -24,7 +24,7 @@ on:
         value: ${{ jobs.plan.outputs.deployRoleChanges }}
 
 env:
-  PAC_OUTPUT_FOLDER: ./Output
+  PAC_OUTPUT_FOLDER: ./Output/plan-epac-dev
   PAC_DEFINITIONS_FOLDER: ./Definitions
 
 jobs:
