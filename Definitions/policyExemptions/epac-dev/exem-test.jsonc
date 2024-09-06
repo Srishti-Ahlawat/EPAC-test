@@ -5,7 +5,7 @@
             "displayName": "Descriptive name displayed on portal",
             "description": "More details",
             "exemptionCategory": "Waiver",
-            "scopes": "/providers/Microsoft.Management/managementGroups/mg-Epac-Dev",
+            "scope": "/providers/Microsoft.Management/managementGroups/mg-Epac-Dev",
             "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/feedbf84-6b99-488c-acc2-71c829aa5ffc"
         }
     ]
