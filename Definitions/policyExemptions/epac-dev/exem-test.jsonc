@@ -1,8 +1,8 @@
 {
     "exemptions": [
         {
-            "name": "short-name",
-            "displayName": "Descriptive name displayed on portal",
+            "name": "loc",
+            "displayName": "allowed loc",
             "description": "More details",
             "exemptionCategory": "Waiver",
             "scope": "/providers/Microsoft.Management/managementGroups/mg-Epac-Dev",
