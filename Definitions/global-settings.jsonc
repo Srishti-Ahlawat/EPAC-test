@@ -12,6 +12,17 @@
                 "keepDfcSecurityAssignments": true  
             },
             "deploymentRootScope": "/providers/Microsoft.Management/managementGroups/mg-Epac-Dev"
+        },
+        {
+            "pacSelector": "tenant",
+            "cloud": "AzureCloud",
+            "tenantId": "c3ac7434-2aaa-4fe0-881d-5229a1ab25e1",
+            "managedIdentityLocation": "eastus",
+            "desiredState": {
+                "strategy": "full",  
+                "keepDfcSecurityAssignments": true  
+            },
+            "deploymentRootScope": "/"
         }
     ]
 }
