@@ -53,13 +53,13 @@ jobs:
       PAC_DEFINITIONS_FOLDER: ./Definitions
     secrets: inherit
 
-  tenantPlan:
-    name: Plan tenant
-    needs: [deployPolicy, deployRoles]
-    uses: ./.github/workflows/plan.yml
-    with:
-      pacEnvironmentSelector: tenant
-      planGitHubEnvironment: TENANT-PLAN
-      PAC_OUTPUT_FOLDER: ./Output
-      PAC_DEFINITIONS_FOLDER: ./Definitions
-    secrets: inherit
+  # tenantPlan:
+  #   name: Plan tenant
+  #   needs: [deployPolicy, deployRoles]
+  #   uses: ./.github/workflows/plan.yml
+  #   with:
+  #     pacEnvironmentSelector: tenant
+  #     planGitHubEnvironment: TENANT-PLAN
+  #     PAC_OUTPUT_FOLDER: ./Output
+  #     PAC_DEFINITIONS_FOLDER: ./Definitions
+  #   secrets: inherit
