@@ -1,0 +1,19 @@
+{
+    "nodeName": "/monitor/",
+    "assignment": {
+    "name": "924bfe3a-762f-40e7-86dd-5c8b95eb09e6",
+    "displayName": "Enable Azure Monitor for VMs with Azure Monitoring Agent(AMA)",
+    "description": "Enable Azure Monitor for the virtual machines (VMs) with AMA"
+},
+    "definitionEntry": {
+      "policyId": "/providers/Microsoft.Authorization/policySetDefinitions/924bfe3a-762f-40e7-86dd-5c8b95eb09e6"
+    },
+    "scope": {
+                        "epac-dev": [
+                            "/providers/Microsoft.Management/managementGroups/mg-Epac-Dev"
+                        ]
+            }
+    // "parameters": {
+    //     "enableProcessesAndDependencies": 
+    // }
+}
